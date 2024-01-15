@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body>
+    <section class="bg-black">
+        <div class="container_">
+            <!-- ----nav tabs------- -->
+            <div class="flex max-sm:overflow-x-scroll pl-[48px] max-xl:pl-[0]">
+                <div class="tabs flex border-b-[1px] border-[#F3F4F6]">
+                    <button onclick="navtabs('tab1')"
+                        class="text-[18px] bg-white   w-[172px]  font-Montserrat text-[#030522] font-semibold py-[16px] px-[20px] flex justify-center items-center"
+                        style="border-radius: 20px 0px 0px 0px;">Economy</button>
+                    <button onclick="navtabs('tab2')"
+                        class="text-[18px] bg-white w-[172px]  font-Montserrat text-[#030522] font-semibold py-[16px] px-[20px] flex justify-center items-center">Busniness
+                    </button>
+                    <button onclick="navtabs('tab3')"
+                        class="text-[18px] bg-white w-[172px]  font-Montserrat text-[#030522] font-semibold py-[16px] px-[20px] flex justify-center items-center"
+                        style="border-radius: 0px 30px 0px 0px;">First</button>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="max-w-[1200px] w-full p-[40px] bg-white rounded-[0px_20px_20px_20px] max-sm:rounded-[0px_2px_20px_20px]"
+                    style="box-shadow: 0px 100px 200px 0px rgba(1, 23, 54, 0.10); ">
+                    <div class="tabshow" id="tab1">
+                        <div class="row  ">
+                            <div class="col-3 max-lg:col-6  flex max-lg:justify-start max-lg:pt-[24px] max-sm:col-12 ">
+                                <div class="flex  gap-[8px]">
+                                    <div class="w-[56px] h-[56px] rounded-[50%]  flex justify-center items-center"
+                                        style="background-color:  rgba(49, 62, 247, 0.05);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M11.9989 13.4314C13.722 13.4314 15.1189 12.0345 15.1189 10.3114C15.1189 8.58828 13.722 7.19141 11.9989 7.19141C10.2758 7.19141 8.87891 8.58828 8.87891 10.3114C8.87891 12.0345 10.2758 13.4314 11.9989 13.4314Z"
+                                                stroke="#030522" stroke-width="1.5" />
+                                            <path
+                                                d="M3.62166 8.49C5.59166 -0.169998 18.4217 -0.159997 20.3817 8.5C21.5317 13.58 18.3717 17.88 15.6017 20.54C13.5917 22.48 10.4117 22.48 8.39166 20.54C5.63166 17.88 2.47166 13.57 3.62166 8.49Z"
+                                                stroke="#030522" stroke-width="1.5" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h4 class="text-[#030522] font-Montserrat text-[18px] font-semibold">
+                                            Location
+                                        </h4>
+                                        <p class="text-[#AEB5BF] text-[16px] font-normal font-Montserrat">Where are
+                                            you
+                                            going?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-3 max-lg:col-6  flex justify-center  max-lg:pt-[24px] max-sm:col-12 max-lg:justify-start">
+                                <div class="flex  gap-[8px]">
+                                    <div class="w-[56px] h-[56px] rounded-[50%]  flex justify-center items-center"
+                                        style="background-color:  rgba(49, 62, 247, 0.05);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M12.6786 3.96C13.1586 4.67 13.4386 5.52 13.4386 6.44C13.4286 8.84 11.5386 10.79 9.15859 10.87C9.05859 10.86 8.93859 10.86 8.82859 10.87C6.44859 10.79 4.55859 8.84 4.55859 6.44C4.55859 3.99 6.53859 2 8.99859 2"
+                                                stroke="#030522" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M16.4112 4C18.3512 4 19.9112 5.57 19.9112 7.5C19.9112 9.39 18.4113 10.93 16.5413 11C16.4613 10.99 16.3713 10.99 16.2812 11"
+                                                stroke="#030522" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M4.15875 14.56C1.73875 16.18 1.73875 18.82 4.15875 20.43C6.90875 22.27 11.4188 22.27 14.1688 20.43C16.5888 18.81 16.5888 16.17 14.1688 14.56C11.4288 12.73 6.91875 12.73 4.15875 14.56Z"
+                                                stroke="#030522" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M18.3398 20C19.0598 19.85 19.7398 19.56 20.2998 19.13C21.8598 17.96 21.8598 16.03 20.2998 14.86C19.7498 14.44 19.0798 14.16 18.3698 14"
+                                                stroke="#030522" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h4 class="text-[#030522] font-Montserrat text-[18px] font-semibold">
+                                            Travelers
+                                        </h4>
+                                        <p class="text-[#AEB5BF] text-[16px] font-normal font-Montserrat">Add guest
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-3 max-lg:col-6   flex justify-center max-lg:pt-[24px] max-sm:col-12  max-lg:justify-start">
+                                <div class="flex  gap-[8px]">
+                                    <div class="w-[56px] h-[56px] rounded-[50%]  flex justify-center items-center"
+                                        style="background-color:  rgba(49, 62, 247, 0.05);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M8 2V5" stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16 2V5" stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3.5 9.08984H20.5" stroke="#030522" stroke-width="1.5"
+                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M3 13.01V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17"
+                                                stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11.9941 13.6992H12.0031" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.29492 13.6992H8.3039" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.29492 16.6992H8.3039" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h4 class="text-[#030522] font-Montserrat text-[18px] font-semibold">
+                                            Check-in
+                                        </h4>
+                                        <p class="text-[#AEB5BF] text-[16px] font-normal font-Montserrat">Add date
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-3 max-lg:col-6 max-lg:justify-start  max-lg:pt-[24px] max-sm:col-12 flex justify-end">
+                                <div class="flex  gap-[8px]">
+                                    <div class="w-[56px] h-[56px] rounded-[50%]  flex justify-center items-center"
+                                        style="background-color:  rgba(49, 62, 247, 0.05);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M8 2V5" stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16 2V5" stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3.5 9.08984H20.5" stroke="#030522" stroke-width="1.5"
+                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M3 13.01V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17"
+                                                stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11.9941 13.6992H12.0031" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.29492 13.6992H8.3039" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.29492 16.6992H8.3039" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h4 class="text-[#030522] font-Montserrat text-[18px] font-semibold">
+                                            Check-out
+                                        </h4>
+                                        <p class="text-[#AEB5BF] text-[16px] font-normal font-Montserrat">Add date
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabshow" id="tab2">
+                        <div class="row ">
+
+                            <div
+                                class="col-3 max-lg:col-6  flex justify-center  max-lg:pt-[24px] max-sm:col-12 max-lg:justify-start">
+                                <div class="flex  gap-[8px]">
+                                    <div class="w-[56px] h-[56px] rounded-[50%]  flex justify-center items-center"
+                                        style="background-color:  rgba(49, 62, 247, 0.05);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M12.6786 3.96C13.1586 4.67 13.4386 5.52 13.4386 6.44C13.4286 8.84 11.5386 10.79 9.15859 10.87C9.05859 10.86 8.93859 10.86 8.82859 10.87C6.44859 10.79 4.55859 8.84 4.55859 6.44C4.55859 3.99 6.53859 2 8.99859 2"
+                                                stroke="#030522" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M16.4112 4C18.3512 4 19.9112 5.57 19.9112 7.5C19.9112 9.39 18.4113 10.93 16.5413 11C16.4613 10.99 16.3713 10.99 16.2812 11"
+                                                stroke="#030522" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M4.15875 14.56C1.73875 16.18 1.73875 18.82 4.15875 20.43C6.90875 22.27 11.4188 22.27 14.1688 20.43C16.5888 18.81 16.5888 16.17 14.1688 14.56C11.4288 12.73 6.91875 12.73 4.15875 14.56Z"
+                                                stroke="#030522" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M18.3398 20C19.0598 19.85 19.7398 19.56 20.2998 19.13C21.8598 17.96 21.8598 16.03 20.2998 14.86C19.7498 14.44 19.0798 14.16 18.3698 14"
+                                                stroke="#030522" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h4 class="text-[#030522] font-Montserrat text-[18px] font-semibold">
+                                            Travelers
+                                        </h4>
+                                        <p class="text-[#AEB5BF] text-[16px] font-normal font-Montserrat">Add guest
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 max-lg:col-6  flex max-lg:justify-start max-lg:pt-[24px] max-sm:col-12 ">
+                                <div class="flex  gap-[8px]">
+                                    <div class="w-[56px] h-[56px] rounded-[50%]  flex justify-center items-center"
+                                        style="background-color:  rgba(49, 62, 247, 0.05);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M11.9989 13.4314C13.722 13.4314 15.1189 12.0345 15.1189 10.3114C15.1189 8.58828 13.722 7.19141 11.9989 7.19141C10.2758 7.19141 8.87891 8.58828 8.87891 10.3114C8.87891 12.0345 10.2758 13.4314 11.9989 13.4314Z"
+                                                stroke="#030522" stroke-width="1.5" />
+                                            <path
+                                                d="M3.62166 8.49C5.59166 -0.169998 18.4217 -0.159997 20.3817 8.5C21.5317 13.58 18.3717 17.88 15.6017 20.54C13.5917 22.48 10.4117 22.48 8.39166 20.54C5.63166 17.88 2.47166 13.57 3.62166 8.49Z"
+                                                stroke="#030522" stroke-width="1.5" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h4 class="text-[#030522] font-Montserrat text-[18px] font-semibold">
+                                            Location
+                                        </h4>
+                                        <p class="text-[#AEB5BF] text-[16px] font-normal font-Montserrat">Where are
+                                            you
+                                            going?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-3 max-lg:col-6   flex justify-center max-lg:pt-[24px] max-sm:col-12  max-lg:justify-start">
+                                <div class="flex  gap-[8px]">
+                                    <div class="w-[56px] h-[56px] rounded-[50%]  flex justify-center items-center"
+                                        style="background-color:  rgba(49, 62, 247, 0.05);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M8 2V5" stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16 2V5" stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3.5 9.08984H20.5" stroke="#030522" stroke-width="1.5"
+                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M3 13.01V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17"
+                                                stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11.9941 13.6992H12.0031" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.29492 13.6992H8.3039" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.29492 16.6992H8.3039" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h4 class="text-[#030522] font-Montserrat text-[18px] font-semibold">
+                                            Check-in
+                                        </h4>
+                                        <p class="text-[#AEB5BF] text-[16px] font-normal font-Montserrat">Add date
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-3 max-lg:col-6 max-lg:justify-start  max-lg:pt-[24px] max-sm:col-12 flex justify-end">
+                                <div class="flex  gap-[8px]">
+                                    <div class="w-[56px] h-[56px] rounded-[50%]  flex justify-center items-center"
+                                        style="background-color:  rgba(49, 62, 247, 0.05);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M8 2V5" stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16 2V5" stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3.5 9.08984H20.5" stroke="#030522" stroke-width="1.5"
+                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M3 13.01V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17"
+                                                stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11.9941 13.6992H12.0031" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.29492 13.6992H8.3039" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.29492 16.6992H8.3039" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h4 class="text-[#030522] font-Montserrat text-[18px] font-semibold">
+                                            Check-out
+                                        </h4>
+                                        <p class="text-[#AEB5BF] text-[16px] font-normal font-Montserrat">Add date
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabshow" id="tab3">
+                        <div class="row ">
+                            <div class="col-3 max-lg:col-6  flex max-lg:justify-start max-lg:pt-[24px] max-sm:col-12 ">
+                                <div class="flex  gap-[8px]">
+                                    <div class="w-[56px] h-[56px] rounded-[50%]  flex justify-center items-center"
+                                        style="background-color:  rgba(49, 62, 247, 0.05);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M11.9989 13.4314C13.722 13.4314 15.1189 12.0345 15.1189 10.3114C15.1189 8.58828 13.722 7.19141 11.9989 7.19141C10.2758 7.19141 8.87891 8.58828 8.87891 10.3114C8.87891 12.0345 10.2758 13.4314 11.9989 13.4314Z"
+                                                stroke="#030522" stroke-width="1.5" />
+                                            <path
+                                                d="M3.62166 8.49C5.59166 -0.169998 18.4217 -0.159997 20.3817 8.5C21.5317 13.58 18.3717 17.88 15.6017 20.54C13.5917 22.48 10.4117 22.48 8.39166 20.54C5.63166 17.88 2.47166 13.57 3.62166 8.49Z"
+                                                stroke="#030522" stroke-width="1.5" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h4 class="text-[#030522] font-Montserrat text-[18px] font-semibold">
+                                            Location
+                                        </h4>
+                                        <p class="text-[#AEB5BF] text-[16px] font-normal font-Montserrat">Where are
+                                            you
+                                            going?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 max-lg:col-6  flex max-lg:justify-start max-lg:pt-[24px] max-sm:col-12 ">
+                                <div class="flex  gap-[8px]">
+                                    <div class="w-[56px] h-[56px] rounded-[50%]  flex justify-center items-center"
+                                        style="background-color:  rgba(49, 62, 247, 0.05);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M11.9989 13.4314C13.722 13.4314 15.1189 12.0345 15.1189 10.3114C15.1189 8.58828 13.722 7.19141 11.9989 7.19141C10.2758 7.19141 8.87891 8.58828 8.87891 10.3114C8.87891 12.0345 10.2758 13.4314 11.9989 13.4314Z"
+                                                stroke="#030522" stroke-width="1.5" />
+                                            <path
+                                                d="M3.62166 8.49C5.59166 -0.169998 18.4217 -0.159997 20.3817 8.5C21.5317 13.58 18.3717 17.88 15.6017 20.54C13.5917 22.48 10.4117 22.48 8.39166 20.54C5.63166 17.88 2.47166 13.57 3.62166 8.49Z"
+                                                stroke="#030522" stroke-width="1.5" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h4 class="text-[#030522] font-Montserrat text-[18px] font-semibold">
+                                            Location
+                                        </h4>
+                                        <p class="text-[#AEB5BF] text-[16px] font-normal font-Montserrat">Where are
+                                            you
+                                            going?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="col-3 max-lg:col-6   flex justify-center max-lg:pt-[24px] max-sm:col-12  max-lg:justify-start">
+                                <div class="flex  gap-[8px]">
+                                    <div class="w-[56px] h-[56px] rounded-[50%]  flex justify-center items-center"
+                                        style="background-color:  rgba(49, 62, 247, 0.05);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M8 2V5" stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16 2V5" stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3.5 9.08984H20.5" stroke="#030522" stroke-width="1.5"
+                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M3 13.01V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17"
+                                                stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11.9941 13.6992H12.0031" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.29492 13.6992H8.3039" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.29492 16.6992H8.3039" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h4 class="text-[#030522] font-Montserrat text-[18px] font-semibold">
+                                            Check-in
+                                        </h4>
+                                        <p class="text-[#AEB5BF] text-[16px] font-normal font-Montserrat">Add date
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-3 max-lg:col-6 max-lg:justify-start  max-lg:pt-[24px] max-sm:col-12 flex justify-end">
+                                <div class="flex  gap-[8px]">
+                                    <div class="w-[56px] h-[56px] rounded-[50%]  flex justify-center items-center"
+                                        style="background-color:  rgba(49, 62, 247, 0.05);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M8 2V5" stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16 2V5" stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3.5 9.08984H20.5" stroke="#030522" stroke-width="1.5"
+                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M3 13.01V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17"
+                                                stroke="#030522" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11.9941 13.6992H12.0031" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.29492 13.6992H8.3039" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.29492 16.6992H8.3039" stroke="#030522" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h4 class="text-[#030522] font-Montserrat text-[18px] font-semibold">
+                                            Check-out
+                                        </h4>
+                                        <p class="text-[#AEB5BF] text-[16px] font-normal font-Montserrat">Add date
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center pt-[25px]">
+                        <button
+                            class="py-[14px] px-[45px] text-white font-Montserrat font-semibold text-[16px] duration-300 transition-all hover:bg-transparent border-[2px]  border-solid border-[#313EF7] hover:text-[#313EF7] rounded-[56px] bg-[#313EF7]"
+                            style="box-shadow: 0px 10px 14px 0px rgba(49, 62, 247, 0.25);">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----nav tabs------- -->
+        <!-- --------accodion------- -->
+        <div class="container_ pt-[100px]">
+            <div class="relative mb-3">
+                <h6 class="mb-0">
+                    <button
+                        class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="collapse-1">
+                        <span class="text-white">What is Material Tailwind?</span>
+                        <i class="absolute right-0 pt-1 text-xs  group-open:opacity-0"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path d="M1 10H10M19 10H10M10 10V1.5M10 10V18.5M10 10H3.04545" stroke="#FDDA60"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg></i>
+                        <i class="absolute right-0 pt-1 text-xs opacity-0 group-open:opacity-100"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="21" height="2" viewBox="0 0 21 2" fill="none">
+                                <path d="M1.69629 1H19.6963" stroke="#FDDA60" stroke-width="2" stroke-linecap="round" />
+                            </svg></i>
+                    </button>
+                </h6>
+                <div data-collapse="collapse-1" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="p-4 text-sm text-white">
+                        We're not always in the position that we want to be at. We're constantly
+                        growing. We're constantly making mistakes. We're constantly trying to
+                        express ourselves and actualize our dreams.
+                    </div>
+                </div>
+            </div>
+            <div class="relative mb-3">
+                <h6 class="mb-0">
+                    <button
+                        class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="collapse-2">
+                        <span class="text-white">How to use Material Tailwind?</span>
+                        <i class="absolute right-0 pt-1 text-xs  group-open:opacity-0"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path d="M1 10H10M19 10H10M10 10V1.5M10 10V18.5M10 10H3.04545" stroke="#FDDA60"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg></i>
+                        <i class="absolute right-0 pt-1 text-xs opacity-0  group-open:opacity-100"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="21" height="2" viewBox="0 0 21 2" fill="none">
+                                <path d="M1.69629 1H19.6963" stroke="#FDDA60" stroke-width="2" stroke-linecap="round" />
+                            </svg></i>
+                    </button>
+                </h6>
+                <div data-collapse="collapse-2" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="p-4 text-sm text-white">
+                        We're not always in the position that we want to be at. We're constantly
+                        growing. We're constantly making mistakes. We're constantly trying to
+                        express ourselves and actualize our dreams.
+                    </div>
+                </div>
+            </div>
+            <div class="relative mb-3">
+                <h6 class="mb-0">
+                    <button
+                        class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                        data-collapse-target="collapse-3">
+                        <span class="text-white">What can I do with Material Tailwind?</span>
+                        <i class="absolute right-0 pt-1 text-xs text-white   group-open:opacity-0"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path d="M1 10H10M19 10H10M10 10V1.5M10 10V18.5M10 10H3.04545" stroke="#FDDA60"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg></i>
+                        <i class="absolute right-0 pt-1 text-xs opacity-0  group-open:opacity-100"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="21" height="2" viewBox="0 0 21 2" fill="none">
+                                <path d="M1.69629 1H19.6963" stroke="#FDDA60" stroke-width="2" stroke-linecap="round" />
+                            </svg></i>
+                    </button>
+                </h6>
+                <div data-collapse="collapse-3" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="p-4 text-sm leading-normal text-white text-blue-gray-500/80">
+                        We're not always in the position that we want to be at. We're constantly
+                        growing. We're constantly making mistakes. We're constantly trying to
+                        express ourselves and actualize our dreams.
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <!-- --------accodion------- -->
+        <!-- --------counterapp -->
+        <div class="container_">
+            <h2 class="text-center text-white py-5">Advance Counter app</h2>
+            <div class="d-flex justify-content-center align-items-center    ">
+                <div class="box flex items-center flex-col">
+                    <div class="d-flex justify-content-center text-white" id="number">
+                        0
+                    </div>
+                    <div class="flex justify-center gap-2 mt-4">
+                        <button class=" text-white bg-blue-600 py-3 px-6 " id="add_btn">Add One</button>
+                        <button class="s text-white bg-blue-600 py-3 px-6 " id="save">Save</button>
+                    </div>
+                    <div class="flex justify-center mt-3">
+                        <button class=" text-white bg-blue-600 py-3 px-6" id="reset">Reset</button>
+                    </div>
+
+
+                    <p class="mb-0 text-center text-white pt-4 ">Previous values</p>
+                    <p class="mb-0 text-center number_pera pt-3 text-white" id="store"></p>
+                </div>
+            </div>
+        </div>
+        <!-- --------counterapp -->
+        <!-- --------timeline------ -->
+        <div class="container_">
+            <div class="flex flex-col">
+
+
+                <div class="relative pl-8   group">
+                    <div
+                        class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:sm:h-[46px] before:h-full before:border-[2px]  before:border-dashed before:border-[#E5E7EB] before:bg-[#fff] sm:before:ml-[1rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-[10px] after:sm:top-[20%] after:top-[8%] after:h-[10px] after:bg-[#313EF7]    after:rounded-full sm:after:ml-[1rem] after:-translate-x-1/2 after:translate-y-1.5">
+                    </div>
+                    <div class="text-white text-[16px] font-medium font-Montserrat">Contrary
+                        to popular belief, Lorem Ipsum is not simply random
+                        text</div>
+                </div>
+
+                <div class="relative pl-8  pt-[10px] group">
+
+                    <div
+                        class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:sm:h-[46px] before:h-full before:border-[2px] before:border-dashed before:border-[#E5E7EB] before:bg-[#fff] sm:before:ml-[1rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-[10px] after:h-[10px] after:bg-[#313EF7]  after:rounded-full sm:after:ml-[1rem] after:-translate-x-1/2 after:sm:top-[42%] after:top-[23%] after:translate-y-1.5">
+
+                    </div>
+
+                    <div class="text-white text-[16px] font-medium font-Montserrat">If you
+                        are going to use a passage of Lorem Ipsum</div>
+                </div>
+
+                <div class="relative pl-8  py-[10px] group">
+                    <div
+                        class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:sm:h-[46px] before:h-full before:border-[2px] before:border-dashed before:border-[#E5E7EB] before:bg-[#fff] sm:before:ml-[1rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-[10px] after:h-[10px] after:bg-[#313EF7]  after:rounded-full sm:after:ml-[1rem] after:sm:top-[24%] after:top-[13%] after:-translate-x-1/2 after:translate-y-1.5">
+                    </div>
+
+                    <div class="text-white text-[16px] font-medium font-Montserrat">
+                        Lorem Ipsum is therefore always free from repetition, injected
+                        humour, or non-characteristic words etc.</div>
+                </div>
+                <div class="relative pl-8  group">
+                    <div
+                        class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:sm:h-[46px] before:h-full before:px-px before:bg-[#E5E7EB] sm:before:ml-[1rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-[10px] after:h-[10px] after:bg-[#313EF7]  after:rounded-full sm:after:ml-[1rem] after:-translate-x-1/2 after:sm:top-[16%] after:top-[10%] after:translate-y-1.5">
+
+
+
+                    </div>
+
+                    <div class="text-white text-[16px] font-medium font-Montserrat">
+                        It is a long established fact that a reader will be distracted
+                        by the readable content of a page when looking at its
+                        layout.</div>
+                </div>
+
+            </div>
+        </div>
+        <!-- --------timeline------ -->
+    </section>
+    <section class="bg-[#0C0B0B] h-full ">
+        <div class="container_ mx-auto max-w-[1320px] px-[12px]  ">
+            <div class=" pt-20 pb-20">
+                <h2
+                    class="text-center text-white font-poppins text-[48px] font-[600] pb-[59px] max-md:text-start max-md:pb-[20px]">
+                    Timeline</h2>
+                <div
+                    class="space-y-3 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-[80%] before:w-[5px] before:bg-gradient-to-b before:from-transparent before:bg-white before:bottom-[90px]  ">
+                    <div
+                        class="relative flex  justify-between md:justify-normal md:even:flex-row-reverse group is-active">
+                        <div
+                            class="flex  justify-center w-10 h-10 rounded-full  bg-[#F57B00]    shrink-0 md:order-1 md:group-even:-translate-x-1/2 md:group-odd:translate-x-1/2">
+                        </div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
+                            <div class="flex flex-col md:items-end md:pr-[65px]">
+                                <h4 class="text-[36px] font-semibold  text-white font-poppins">Phase-1</h4>
+                                <h6
+                                    class="sm:text-[18px] font-poppins text-white pt-2 opacity-70 md:text-end max-w-[300px] ">
+                                    Massa pellentesque sagittis Aliquam sed in odio. Turpis blandit at interdum Eget
+                                    tempus nulla tempus arcu.</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="relative flex  justify-between md:justify-normal md:even:flex-row-reverse group is-active">
+                        <div
+                            class="flex  justify-center w-10 h-10 rounded-full   bg-[#F57B00] shrink-0 md:order-1 md:group-even:-translate-x-1/2 md:group-odd:translate-x-1/2">
+                        </div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
+                            <div class="flex flex-col md:pl-[65px]">
+                                <h4 class="text-[36px] font-semibold  text-white font-poppins">Phase-2</h4>
+                                <h6 class="sm:text-[18px] font-poppins text-white pt-2 opacity-70 max-w-[300px] ">Massa
+                                    pellentesque sagittis Aliquam sed in odio. Turpis blandit at interdum Eget tempus
+                                    nulla tempus arcu.</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="relative flex  justify-between md:justify-normal md:even:flex-row-reverse group is-active">
+                        <div
+                            class="flex  justify-center w-10 h-10 rounded-full  bg-[#F57B00]    shrink-0 md:order-1 md:group-even:-translate-x-1/2 md:group-odd:translate-x-1/2">
+                        </div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] ">
+                            <div class="flex flex-col md:items-end md:pr-[65px]">
+                                <h4 class="text-[36px] font-semibold  text-white font-poppins">Phase-3</h4>
+                                <h6
+                                    class="sm:text-[18px] font-poppins text-white pt-2 opacity-70 md:text-end max-w-[300px]">
+                                    Massa pellentesque sagittis Aliquam sed in odio. Turpis blandit at interdum Eget
+                                    tempus nulla tempus arcu.</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="relative flex  justify-between md:justify-normal md:even:flex-row-reverse group is-active">
+                        <div
+                            class="flex  justify-center w-10 h-10 rounded-full   bg-[#F57B00] shrink-0 md:order-1 md:group-even:-translate-x-1/2 md:group-odd:translate-x-1/2">
+                        </div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
+                            <div class="flex flex-col md:pl-[65px]">
+                                <h4 class="text-[36px] font-semibold  text-white font-poppins">Phase-4</h4>
+                                <h6 class="sm:text-[18px] font-poppins text-white pt-2 opacity-70 max-w-[300px]">Massa
+                                    pellentesque sagittis Aliquam sed in odio. Turpis blandit at interdum Eget tempus
+                                    nulla tempus arcu.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <script src="./dist/js/main.js"></script>
+    <script src="node_modules/@material-tailwind/html/scripts/collapse.js"></script>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
+</body>
+
+</html>
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
